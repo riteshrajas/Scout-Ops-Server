@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Remote Python 3.12.4 Docker (python:latest)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.12.3 (sftp://ritesh@10.0.0.250:22/home/ritesh/.virtualenvs/Web_App/bin/python)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Scout-Ops-Server)" project-jdk-type="Python SDK" />
 </project>

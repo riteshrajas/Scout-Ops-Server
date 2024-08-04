@@ -2,11 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyintel Network Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            padding: 1em;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            margin: 1em;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .dark-mode header {
+            background-color: #1e1e1e;
+        }
+        .dark-mode a {
+            background-color: #333;
+        }
+        .dark-mode a:hover {
+            background-color: #444;
+        }
+        .toggle-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .toggle-switch input[type="checkbox"] {
+            display: none;
+        }
+        .toggle-switch label {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 52px;
+            height: 27px;
+            background: #333;
+            display: block;
+            border-radius: 100px;
+            position: relative;
+        }
+        .toggle-switch label:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 23px;
+            height: 23px;
+            background: #fff;
+            border-radius: 90px;
+            transition: 0.3s;
+        }
+        .toggle-switch input[type="checkbox"]:checked + label {
+            background: #4CAF50;
+        }
+        .toggle-switch input[type="checkbox"]:checked + label:after {
+            left: calc(100% - 2px);
+            transform: translateX(-100%);
+        }
+    </style>
 </head>
 <body>
-    <h1>Pyintel Network Management System</h1>
-    <a href="/devices">View Devices</a>
-    <a href="/get_data">View Data</a>
+    <div class="toggle-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle">Toggle Dark Mode</label>
+    </div>
+    <header>
+        <h1>Pyintel Network Management System</h1>
+    </header>
+    <main>
+        <a href="/devices">View Devices</a>
+        <a href="/get_data">View Data</a>
+    </main>
+    <script>
+        const toggleSwitch = document.getElementById('darkModeToggle');
+        toggleSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>

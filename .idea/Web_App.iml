@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/Env" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.12.3 (sftp://ritesh@10.0.0.250:22/home/ritesh/.virtualenvs/Web_App/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Scout-Ops-Server)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
