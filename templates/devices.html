@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devices</title>
+</head>
+<body>
+    <h1>Registered Devices</h1>
+    <ul>
+        {% for device in devices %}
+            <li>{{ device[1] }} - {{ device[2] }}
+                <form action="/delete_device/{{ device[0] }}" method="post" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <form action="/clear_devices" method="post">
+        <button type="submit">Delete All Devices</button>
+    </form>
+    <a href="/">Home</a>
+</body>
+</html>
