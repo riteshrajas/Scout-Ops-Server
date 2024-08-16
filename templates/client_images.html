@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Device Data</title>
     <style>
         /* Global Styles */
         :root {
@@ -143,28 +141,15 @@
         <label for="darkModeToggle">Toggle Dark Mode</label>
     </div>
     <header>
-        <h1>Device Data</h1>
+        <h1>Pyintel Network Management System</h1>
     </header>
     <main>
-        <ul>
-            {% for entry in data %}
-                <li>{{ entry[0] }}: {{ entry[1] }}
-                    <form action="/clear_data/{{ entry[2] }}" method="post" style="display:inline;">
-                        <button type="submit">Clear Data</button>
-                    </form>
-                </li>
-            {% endfor %}
-        </ul>
-        <form action="/clear_data" method="post">
-            <button type="submit">Clear All Data</button>
-        </form>
-        <a href="/">Home</a>
+        <a href="client_images/getAndroid">Android App</a>
+        <a href="client_images/getServer">Python Server</a>
+        <a href="client_images/getWindows">Windows App</a>
     </main>
     <script>
-        const toggleSwitch = document.getElementById('darkModeToggle');
-        toggleSwitch.addEventListener('change', () => {
-            document.body.classList.toggle('dark-mode');
-        });
+   
     </script>
 </body>
 </html>

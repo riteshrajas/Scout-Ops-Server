@@ -172,9 +172,22 @@ def register():
         print(f"Registered device: {device_name} with IP: {device_ip}")
         return jsonify({"status": "success"})
 
-@app.route('/getApp', methods=['GET'])
-def get_app():
+@app.route('/client_images/getAndroid', methods=['GET'])
+def getAndroid():
     return send_file('./App/android.apk', as_attachment=True)
+
+@app.route('/client_images/getServer', methods=['GET'])
+def getServer():
+    return send_file('./App/android.apk', as_attachment=True)
+
+@app.route('/client_images/getWindows', methods=['GET'])
+def getWindows():
+    return send_file('./App/android.apk', as_attachment=True)
+    
+
+@app.route('/client_images', methods=['GET'])
+def client_images():
+    return render_template('client_images.html')
 
 @app.route('/clear_data', methods=['POST'])
 def clear_data():
