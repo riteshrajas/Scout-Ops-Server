@@ -5,11 +5,12 @@ if not exist ".\Output" (
     mkdir ".\Output"
 )
 
-REM Run PyInstaller
-pyinstaller --noconfirm --onefile --console ^
---add-data ".\devices.db;." ^
+REM Start PowerShell loading bar in a separate process
+start /b powershell -Command "Write-Progress -Activity 'Compiling' -Status 'In Progress' -PercentComplete 0; while ($true) { for ($i = 0; $i -le 100; $i += 10) { Write-Progress -Activity 'Compiling' -Status 'In Progress' -PercentComplete $i; Start-Sleep -Seconds 1 } }"
+
+REM Run PyInstaller with icon and suppressed output
+pyinstaller --noconfirm --onefile --console --icon ".\templates\logo.ico" --log-level CRITICAL ^
 --add-data ".\identifier.sqlite;." ^
---add-data ".\match.db;." ^
 --add-data ".\README.md;." ^
 --add-data ".\requirements.txt;." ^
 --add-data ".\server.py;." ^
@@ -26,7 +27,10 @@ pyinstaller --noconfirm --onefile --console ^
 --add-data ".\templates\info.html;." ^
 --add-data ".\App\app-release.apk;." ^
 --distpath ".\Output" ^
-".\server.py"
+"./server.py"
+
+REM Stop the PowerShell loading bar
+powershell -Command "Stop-Process -Name powershell -Force"
 
 REM Display a message box indicating completion
 powershell -command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('The executable has been compiled and is located in the Output folder. ', 'Compilation Complete')"
