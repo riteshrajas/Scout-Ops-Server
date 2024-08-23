@@ -8,7 +8,7 @@ import sys
 import time
 import warnings
 from datetime import datetime
-from gevent.pywsgi import WSGIServer
+# from gevent.pywsgi import WSGIServer
 from flask import Flask, request, jsonify, send_file, render_template
 import json
 
@@ -415,9 +415,9 @@ if __name__ == '__main__':
     print(f"Scout-Ops Server is running on: http://{local_ip}:5000\n")
 
     # Start the server
-    http_server = WSGIServer(('0.0.0.0', 5000), app)
+    # http_server = WSGIServer(('0.0.0.0', 5000), app)
 
     # Register the signal handler for SIGINT
     signal.signal(signal.SIGINT, signal_handler)
 
-    http_server.serve_forever()
+    # http_server.serve_forever()
