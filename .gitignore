@@ -1,2 +1,4 @@
 /output/*
 /output/devices.db
+devices.db
+match.db
