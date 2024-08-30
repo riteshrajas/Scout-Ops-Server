@@ -9,7 +9,7 @@ REM Start PowerShell loading bar in a separate process
 start /b powershell -Command "Write-Progress -Activity 'Compiling' -Status 'In Progress' -PercentComplete 0; while ($true) { for ($i = 0; $i -le 100; $i += 10) { Write-Progress -Activity 'Compiling' -Status 'In Progress' -PercentComplete $i; Start-Sleep -Seconds 1 } }"
 
 REM Run PyInstaller with icon and suppressed output
-pyinstaller --noconfirm --onefile --console --icon ".\templates\logo.ico" --log-level CRITICAL ^
+pyinstaller --noconfirm --onefile --console --icon ".\templates\logo.ico" --log-level ERROR ^
 --add-data ".\identifier.sqlite;." ^
 --add-data ".\README.md;." ^
 --add-data ".\requirements.txt;." ^
