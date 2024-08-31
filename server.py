@@ -470,9 +470,11 @@ def get_event_file():
     cursor = conn.cursor()
     cursor.execute('SELECT match_data FROM event')
     data = cursor.fetchall()
+    data = [json.loads(row[0]) for row in data]
     conn.close()
     log_message(f"Event data fetched")
     return jsonify(data)
+
 
 
 @app.route('/post_event_file', methods=['POST'])
@@ -497,12 +499,12 @@ def post_match():
 
         conn.commit()
         conn.close()
-        log_message(f"Event data posted")
         log_message(f"{len(data)} matches posted")
         return jsonify({"status": "success", "message": f"{len(data)} matches posted"}), 200
     except Exception as e:
         conn.close()
         return jsonify({"status": "error", "message": str(e)}), 500
+
 
 
 @app.route('/clear_event_file', methods=['POST'])
