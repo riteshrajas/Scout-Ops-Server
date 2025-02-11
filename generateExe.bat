@@ -10,7 +10,6 @@ start /b powershell -Command "Write-Progress -Activity 'Compiling' -Status 'In P
 
 REM Run PyInstaller with icon and suppressed output
 pyinstaller --noconfirm --onefile --console --icon ".\templates\logo.ico" --log-level ERROR ^
---add-data ".\identifier.sqlite;." ^
 --add-data ".\README.md;." ^
 --add-data ".\requirements.txt;." ^
 --add-data ".\server.py;." ^

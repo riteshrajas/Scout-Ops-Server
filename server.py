@@ -1,3 +1,4 @@
+import re
 import threading
 import curses
 import logging
@@ -16,6 +17,51 @@ import json
 import psutil
 
 app = Flask(__name__)
+
+
+def fix_to_json_format(data):
+    # Add double quotes to keys
+    data = re.sub(r'([a-zA-Z0-9_]+):', r'"\1":', data)
+    # Add double quotes to string values (but not true, false, numbers)
+    data = re.sub(r':\s*([a-zA-Z_]+)', r': "\1"', data)
+    return data
+
+# Function to take input, fix it, and save it
+def process_json_input():
+    count = 1
+    while True:
+        # Input for a malformed JSON object
+        input_data = input(f"Enter JSON object {count} (or type 'exit' to stop): ")
+
+        if input_data.lower() == 'exit':
+            print("Exiting...")
+            break
+
+        try:
+            # Fix the input data
+            fixed_data = fix_to_json_format(input_data)
+
+            # Parse the fixed string into a Python dictionary
+            json_data = json.loads(fixed_data)
+
+            # Define the output file name
+            output_filename = f"output_{count}.json"
+
+            # Write the JSON data to a file
+            with open(output_filename, "w") as f:
+                json.dump(json_data, f, indent=4)
+
+            print(f"Processed and saved JSON object {count} as {output_filename}")
+            count += 1
+        except json.JSONDecodeError as e:
+            print(f"Error processing JSON input: {e}. Please check the format.")
+
+# Create output directory if not exists
+if not os.path.exists("output_jsons"):
+    os.makedirs("output_jsons")
+
+# Change to the directory where outputs will be saved
+os.chdir("output_jsons")
 
 
 def log_message(message):
@@ -197,7 +243,7 @@ def curses_interface(stdscr):
         details_box.box()
 
         # Displaying server details inside the box
-        details_box.addstr(1, 1, f"Server IP: {info['ServerIP']}", curses.A_BOLD)
+        details_box.addstr(1, 1, f"Server IP: {info['ServerIP']}:5000", curses.A_BOLD)
         details_box.addstr(2, 1, f"Server Port: 5000", curses.A_BOLD)
         details_box.addstr(3, 1, f"Server Status: Running", curses.A_BOLD)
         details_box.addstr(4, 1, f"Battery: {info['ServerBattery']}",
@@ -526,19 +572,28 @@ def get_health():
 
 # Main function
 def main():
-    # Suppress specific warnings
-    warnings.filterwarnings("ignore", category=UserWarning, message='.*server.*')
-    log = logging.getLogger('werkzeug')
-    log.setLevel(logging.ERROR)
+    mode = input("Enter mode (server/interpreter): ").strip().lower()
 
-    # Start the Flask app in a separate thread
-    flask_thread = threading.Thread(target=run_flask_app)
-    flask_thread.daemon = True
-    flask_thread.start()
+    if mode == "server":
+        # Suppress specific warnings
+        warnings.filterwarnings("ignore", category=UserWarning, message='.*server.*')
+        log = logging.getLogger('werkzeug')
+        log.setLevel(logging.ERROR)
 
-    # Start the curses interface
-    curses.wrapper(curses_interface)
+        # Start the Flask app in a separate thread
+        flask_thread = threading.Thread(target=run_flask_app)
+        flask_thread.daemon = True
+        flask_thread.start()
+
+        # Start the curses interface
+        curses.wrapper(curses_interface)
+    elif mode == "interpreter":
+        while True:
+            process_json_input()
+    else:
+        print("Invalid mode selected. Please choose either 'server' or 'interpreter'.")
 
 
 if __name__ == '__main__':
     main()
+
