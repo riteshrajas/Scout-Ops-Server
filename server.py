@@ -180,7 +180,7 @@ def signal_handler(sig, frame):
 
 # Function to run the Flask app in a separate thread
 def run_flask_app():
-    http_server = WSGIServer(('0.0.0.0', 5000), app)
+    http_server = WSGIServer(('0.0.0.0', 201), app)
     http_server.serve_forever()
 
 
@@ -229,7 +229,7 @@ def curses_interface(stdscr):
     init_db()
     log_message("")
     log_message("----------------------------------------------------")
-    log_message("Server Ip Address: http://" + info['ServerIP'] + ":5000")
+    log_message("Server Ip Address: http://" + info['ServerIP'] + ":201")
     log_message("Server Battery: " + info['ServerBattery'])
     log_message("Server CPU Usage: " + str(info['ServerCPUUsage']) + "%")
     log_message("Server Memory Usage: " + str(info['ServerMemoryUsage']) + "%")
@@ -243,8 +243,8 @@ def curses_interface(stdscr):
         details_box.box()
 
         # Displaying server details inside the box
-        details_box.addstr(1, 1, f"Server IP: {info['ServerIP']}:5000", curses.A_BOLD)
-        details_box.addstr(2, 1, f"Server Port: 5000", curses.A_BOLD)
+        details_box.addstr(1, 1, f"Server IP: {info['ServerIP']}:201", curses.A_BOLD)
+        details_box.addstr(2, 1, f"Server Port: 201", curses.A_BOLD)
         details_box.addstr(3, 1, f"Server Status: Running", curses.A_BOLD)
         details_box.addstr(4, 1, f"Battery: {info['ServerBattery']}",
                            curses.A_BOLD)  # Example, replace with actual data
