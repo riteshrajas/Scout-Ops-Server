@@ -471,6 +471,23 @@ def clear_devices_json():
 
 # get the ip adres of the client
 
+@app.route('/send_pit_data', methods=['POST'])
+def send_pit_data():
+    data = None
+    try:
+        data = str(request.json).replace("'", '"')
+        log_message(f"Pit data received: {data}")
+        with open('pit_data.json', 'w') as file:
+            file.write(fix_to_json_format(str(data)))
+        print("")
+        return jsonify({"status": "success"})
+    except json.JSONDecodeError:
+        data = None
+        return jsonify({"status": "error", "message": "Invalid JSON format"}), 400
+    
+    
+
+
 @app.route('/alive', methods=['GET'])
 def alive():
     log_message("Server Communication Tested")

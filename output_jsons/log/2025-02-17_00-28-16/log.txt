@@ -1,0 +1,17 @@
+2025-02-17 00:28:09.506817: Device database initialized
+2025-02-17 00:28:09.510380: Match database initialized
+2025-02-17 00:28:09.510380: 
+2025-02-17 00:28:09.511381: ----------------------------------------------------
+2025-02-17 00:28:09.511381: Server Ip Address: http://10.0.0.28:201
+2025-02-17 00:28:09.512378: Server Battery: 100% | Plugged In
+2025-02-17 00:28:09.512378: Server CPU Usage: 18.4%
+2025-02-17 00:28:09.512378: Server Memory Usage: 86.0%
+2025-02-17 00:28:09.513901: Server Storage Usage: 82.9%
+2025-02-17 00:28:09.514925: Server Status: Running
+2025-02-17 00:28:09.514925: ----------------------------------------------------
+2025-02-17 00:28:09.514925: 
+2025-02-17 00:28:13.353614: Pit data received: {'device_name': 'Ritesh', 'data': '{"1058":{"teamNumber":1058,"scouterName":"Scouter Name","eventKey":"test","keyStrengths":"123456","keyWeaknesses":"234678","defensiveStratigiy":"345678","defensePlan":"23456789"}}'}
+2025-02-17 00:28:16.116519: 
+2025-02-17 00:28:16.116519: Gracefully stopping the server...
+2025-02-17 00:28:16.117520: 
+Server stopped.

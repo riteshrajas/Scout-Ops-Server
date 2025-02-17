@@ -1,0 +1,18 @@
+2025-02-17 00:56:48.015599: Device database initialized
+2025-02-17 00:56:48.020598: Match database initialized
+2025-02-17 00:56:48.020598: 
+2025-02-17 00:56:48.020598: ----------------------------------------------------
+2025-02-17 00:56:48.021606: Server Ip Address: http://10.0.0.28:201
+2025-02-17 00:56:48.021606: Server Battery: 100% | Plugged In
+2025-02-17 00:56:48.021606: Server CPU Usage: 6.5%
+2025-02-17 00:56:48.021606: Server Memory Usage: 76.1%
+2025-02-17 00:56:48.021606: Server Storage Usage: 82.9%
+2025-02-17 00:56:48.022607: Server Status: Running
+2025-02-17 00:56:48.022607: ----------------------------------------------------
+2025-02-17 00:56:48.022607: 
+2025-02-17 00:57:17.149474: Server Communication Tested
+2025-02-17 00:57:19.564348: Pit data received: {"1058": {"teamNumber": 1058, "scouterName": "Scouter Name", "eventKey": "test", "keyStrengths": "123456", "keyWeaknesses": "234678", "defensiveStratigiy": "345678", "defensePlan": "23456789"}, "1073": {"teamNumber": 1073, "scouterName": "Scouter Name", "eventKey": "test", "keyStrengths": "09876543", "keyWeaknesses": "lkjhvcfrtyujnbvcft", "defensiveStratigiy": "098765redgiokbvcbnjkokbc", "defensePlan": "34567"}, "1119": {"teamNumber": 1119, "scouterName": "Scouter Name", "eventKey": "test", "keyStrengths": "23456789", "keyWeaknesses": "234567890", "defensiveStratigiy": "23456789", "defensePlan": "234567890"}, "1153": {"teamNumber": 1153, "scouterName": "Scouter Name", "eventKey": "test", "keyStrengths": "hb", "keyWeaknesses": "234edcgyuhn", "defensiveStratigiy": "qasertg", "defensePlan": "bv"}}
+2025-02-17 00:57:42.248130: 
+2025-02-17 00:57:42.248130: Gracefully stopping the server...
+2025-02-17 00:57:42.248130: 
+Server stopped.

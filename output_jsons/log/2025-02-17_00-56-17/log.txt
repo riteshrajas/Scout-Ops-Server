@@ -1,0 +1,17 @@
+2025-02-17 00:56:07.318585: Device database initialized
+2025-02-17 00:56:07.324598: Match database initialized
+2025-02-17 00:56:07.325599: 
+2025-02-17 00:56:07.325599: ----------------------------------------------------
+2025-02-17 00:56:07.326597: Server Ip Address: http://10.0.0.28:201
+2025-02-17 00:56:07.326597: Server Battery: 100% | Plugged In
+2025-02-17 00:56:07.326597: Server CPU Usage: 6.8%
+2025-02-17 00:56:07.326597: Server Memory Usage: 77.9%
+2025-02-17 00:56:07.327598: Server Storage Usage: 82.9%
+2025-02-17 00:56:07.327598: Server Status: Running
+2025-02-17 00:56:07.327598: ----------------------------------------------------
+2025-02-17 00:56:07.327598: 
+2025-02-17 00:56:11.009233: Pit data received: {"1058": {"teamNumber": 1058, "scouterName": "Scouter Name", "eventKey": "test", "keyStrengths": "123456", "keyWeaknesses": "234678", "defensiveStratigiy": "345678", "defensePlan": "23456789"}, "1073": {"teamNumber": 1073, "scouterName": "Scouter Name", "eventKey": "test", "keyStrengths": "09876543", "keyWeaknesses": "lkjhvcfrtyujnbvcft", "defensiveStratigiy": "098765redgiokbvcbnjkokbc", "defensePlan": "34567"}}
+2025-02-17 00:56:17.946493: 
+2025-02-17 00:56:17.946493: Gracefully stopping the server...
+2025-02-17 00:56:17.947492: 
+Server stopped.

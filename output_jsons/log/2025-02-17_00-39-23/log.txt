@@ -1,0 +1,24 @@
+2025-02-17 00:38:27.906680: Device database initialized
+2025-02-17 00:38:27.908244: Match database initialized
+2025-02-17 00:38:27.908244: 
+2025-02-17 00:38:27.908244: ----------------------------------------------------
+2025-02-17 00:38:27.908244: Server Ip Address: http://10.0.0.28:201
+2025-02-17 00:38:27.908244: Server Battery: 100% | Plugged In
+2025-02-17 00:38:27.909811: Server CPU Usage: 19.0%
+2025-02-17 00:38:27.909811: Server Memory Usage: 81.2%
+2025-02-17 00:38:27.909811: Server Storage Usage: 82.9%
+2025-02-17 00:38:27.909811: Server Status: Running
+2025-02-17 00:38:27.909811: ----------------------------------------------------
+2025-02-17 00:38:27.909811: 
+2025-02-17 00:38:31.426856: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:38:47.731986: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:38:47.906619: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:38:48.080909: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:39:08.289864: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:39:08.474447: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:39:16.492753: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:39:16.648514: Pit data received: {'1058': {'teamNumber': 1058, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '123456', 'keyWeaknesses': '234678', 'defensiveStratigiy': '345678', 'defensePlan': '23456789'}, '1073': {'teamNumber': 1073, 'scouterName': 'Scouter Name', 'eventKey': 'test', 'keyStrengths': '09876543', 'keyWeaknesses': 'lkjhvcfrtyujnbvcft', 'defensiveStratigiy': '098765redgiokbvcbnjkokbc', 'defensePlan': '34567'}}
+2025-02-17 00:39:23.670542: 
+2025-02-17 00:39:23.671543: Gracefully stopping the server...
+2025-02-17 00:39:23.671543: 
+Server stopped.
