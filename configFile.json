@@ -7,7 +7,7 @@
   },
   {
    "optionDest": "filenames",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/server.py"
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/server.py"
   },
   {
    "optionDest": "onefile",
@@ -51,75 +51,75 @@
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/devices.db;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/devices.db;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/identifier.sqlite;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/identifier.sqlite;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/match.db;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/match.db;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/README.md;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/README.md;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/requirements.txt;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/requirements.txt;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/server.py;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/server.py;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/App;App/"
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/App;App/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/output;output/"
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/output;output/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates;templates/"
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates;templates/"
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/clear_data.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/clear_data.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/clear_devices.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/clear_devices.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/client_images.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/client_images.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/data.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/data.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/delete_device.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/delete_device.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/devices.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/devices.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/index.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/index.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/templates/info.html;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/templates/info.html;."
   },
   {
    "optionDest": "datas",
-   "value": "C:/Users/feds2/Scout-Ops-Suite/Scout-Ops-Server/App/android.apk;."
+   "value": "P:/FEDS201/Scouting_Suite/Scout-Ops-Server/App/android.apk;."
   }
  ],
  "nonPyinstallerOptions": {
